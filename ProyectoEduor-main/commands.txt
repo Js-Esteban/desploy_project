@@ -1,0 +1,8 @@
+py manage.py runsever
+cd .\env\Scripts\actiavte
+cd .. 
+py manage.py makemigrations
+py manage.py migrate
+py -m venv venv
+pip install -r requirements
+pip freeze > requirements.txt

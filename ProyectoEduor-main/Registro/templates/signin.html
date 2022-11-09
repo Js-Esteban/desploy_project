@@ -1,0 +1,12 @@
+<h1>Soy el login</h1>
+
+{{error}}
+
+<form action="/signin/" method="POST">
+    {% csrf_token %}
+    {{form.as_p }}
+        <button>
+            ingresar 
+        </button>
+</form>
+<a href="/signup/">Registro</a>
